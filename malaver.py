@@ -1,16 +1,20 @@
-# input
-h = float(input("Introducir valor: "))
+#While_2
 
-s = h / 5  # El valor límite es 1/5 de la altura inicial
+#input 
 
-saltos = 0  # Inicializar contador de saltos
-valor_caida = h  # Inicializar valor de la caída con la altura inicial
 
-# Bucle while para calcular los rebotes
-while valor_caida >= s:
-    saltos += 1  # Incrementar contador de rebotes
-    valor_caida *= 0.9  # Reducir la altura en un 10%
-    print(saltos)  # Imprimir el número de rebotes
+H = int(input("Digite su Numero: "))
 
-# Imprimir el resultado final
-print("La pelota no alcanzó la 5ª parte de la altura inicial después de", saltos, "rebotes.")
+
+#proccesing
+
+Q = H/5
+N = 0
+
+while H>=Q:
+    H = H-0.1*H
+    N = N+1
+
+# Output
+
+print("Los rebotes desde el valor digitado en total son: "+str(N))
